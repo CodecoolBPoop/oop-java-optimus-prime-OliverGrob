@@ -12,6 +12,11 @@ public class Main {
     }
 
     public static List calculatePrimes(int indexTo) {
+        if (indexTo < 2) {
+            System.out.println("Wrong input parameter!");
+            return null;
+        }
+
         // ----------   ArrayList   ----------
         // Using ArrayList with Boolean values in it, if the valus is false, that number(index) is out
         List<Boolean> numbers = new ArrayList<>(indexTo);
